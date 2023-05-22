@@ -1,0 +1,879 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BF0CE1BE09984CDBAE7CE3B /* Pods_WellHubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CB422FF150B648F2B4A64CF /* Pods_WellHubTests.framework */; };
+		2206EA752A1B9098000A3ADF /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2206EA742A1B9098000A3ADF /* Worker.swift */; };
+		2206EA772A1B90CD000A3ADF /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2206EA762A1B90CD000A3ADF /* Repository.swift */; };
+		2206EA792A1B90E5000A3ADF /* APIHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2206EA782A1B90E5000A3ADF /* APIHost.swift */; };
+		2206EA7B2A1B90F1000A3ADF /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2206EA7A2A1B90F1000A3ADF /* APIProvider.swift */; };
+		2206EA7D2A1B90FC000A3ADF /* APITarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2206EA7C2A1B90FC000A3ADF /* APITarget.swift */; };
+		2206EA802A1B91D6000A3ADF /* Coordinator.App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2206EA7F2A1B91D6000A3ADF /* Coordinator.App.swift */; };
+		2206EA842A1B9200000A3ADF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2206EA832A1B9200000A3ADF /* Coordinator.swift */; };
+		2206EA872A1B92E2000A3ADF /* MoyaResponse+Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2206EA862A1B92E2000A3ADF /* MoyaResponse+Map.swift */; };
+		2206EA892A1B9324000A3ADF /* UIImageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2206EA882A1B9324000A3ADF /* UIImageView+URL.swift */; };
+		2206EA8C2A1B9352000A3ADF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2206EA8B2A1B9352000A3ADF /* Model.swift */; };
+		2206EA912A1B949E000A3ADF /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2206EA902A1B949E000A3ADF /* String+Localizable.swift */; };
+		2206EA9A2A1B951F000A3ADF /* Default.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2206EA9C2A1B951F000A3ADF /* Default.strings */; };
+		2206EA9F2A1B95E6000A3ADF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2206EA9E2A1B95E6000A3ADF /* LaunchScreen.storyboard */; };
+		221580412A1B19940017933D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221580402A1B19940017933D /* AppDelegate.swift */; };
+		221580432A1B19940017933D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221580422A1B19940017933D /* SceneDelegate.swift */; };
+		2215804A2A1B19950017933D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 221580492A1B19950017933D /* Assets.xcassets */; };
+		221580582A1B19950017933D /* WellHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221580572A1B19950017933D /* WellHubTests.swift */; };
+		221580622A1B19950017933D /* WellHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221580612A1B19950017933D /* WellHubUITests.swift */; };
+		221580642A1B19950017933D /* WellHubUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221580632A1B19950017933D /* WellHubUITestsLaunchTests.swift */; };
+		CE594B589DC8AA5347A78DA8 /* Pods_WellHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A352E07AB9989D6D67F0845 /* Pods_WellHub.framework */; };
+		F861E3EC4FB1D877B7674E04 /* Pods_WellHubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C435118A4862FC6682DFC9E2 /* Pods_WellHubUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		221580542A1B19950017933D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 221580352A1B19940017933D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2215803C2A1B19940017933D;
+			remoteInfo = WellHub;
+		};
+		2215805E2A1B19950017933D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 221580352A1B19940017933D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2215803C2A1B19940017933D;
+			remoteInfo = WellHub;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C6BB2B067D68B68F0C9C558 /* Pods-WellHubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WellHubTests.debug.xcconfig"; path = "Target Support Files/Pods-WellHubTests/Pods-WellHubTests.debug.xcconfig"; sourceTree = "<group>"; };
+		10046A402F6FEC8529A15670 /* Pods-WellHubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WellHubTests.release.xcconfig"; path = "Target Support Files/Pods-WellHubTests/Pods-WellHubTests.release.xcconfig"; sourceTree = "<group>"; };
+		1CB422FF150B648F2B4A64CF /* Pods_WellHubTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WellHubTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2206EA742A1B9098000A3ADF /* Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
+		2206EA762A1B90CD000A3ADF /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		2206EA782A1B90E5000A3ADF /* APIHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHost.swift; sourceTree = "<group>"; };
+		2206EA7A2A1B90F1000A3ADF /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
+		2206EA7C2A1B90FC000A3ADF /* APITarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITarget.swift; sourceTree = "<group>"; };
+		2206EA7F2A1B91D6000A3ADF /* Coordinator.App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.App.swift; sourceTree = "<group>"; };
+		2206EA832A1B9200000A3ADF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		2206EA862A1B92E2000A3ADF /* MoyaResponse+Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaResponse+Map.swift"; sourceTree = "<group>"; };
+		2206EA882A1B9324000A3ADF /* UIImageView+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+URL.swift"; sourceTree = "<group>"; };
+		2206EA8B2A1B9352000A3ADF /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		2206EA902A1B949E000A3ADF /* String+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
+		2206EA9B2A1B951F000A3ADF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Default.strings; sourceTree = "<group>"; };
+		2206EA9D2A1B9522000A3ADF /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Default.strings"; sourceTree = "<group>"; };
+		2206EA9E2A1B95E6000A3ADF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2215803D2A1B19940017933D /* WellHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WellHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		221580402A1B19940017933D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		221580422A1B19940017933D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		221580492A1B19950017933D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2215804E2A1B19950017933D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		221580532A1B19950017933D /* WellHubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WellHubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		221580572A1B19950017933D /* WellHubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellHubTests.swift; sourceTree = "<group>"; };
+		2215805D2A1B19950017933D /* WellHubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WellHubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		221580612A1B19950017933D /* WellHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellHubUITests.swift; sourceTree = "<group>"; };
+		221580632A1B19950017933D /* WellHubUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellHubUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3427F9474D46E9EA3CBDE9F5 /* Pods-WellHubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WellHubUITests.debug.xcconfig"; path = "Target Support Files/Pods-WellHubUITests/Pods-WellHubUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		38B4143CE0C89F37DB61E2CF /* Pods-WellHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WellHub.debug.xcconfig"; path = "Target Support Files/Pods-WellHub/Pods-WellHub.debug.xcconfig"; sourceTree = "<group>"; };
+		59A5829881041EC6065C5F02 /* Pods-WellHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WellHub.release.xcconfig"; path = "Target Support Files/Pods-WellHub/Pods-WellHub.release.xcconfig"; sourceTree = "<group>"; };
+		9A352E07AB9989D6D67F0845 /* Pods_WellHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WellHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C435118A4862FC6682DFC9E2 /* Pods_WellHubUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WellHubUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0787CA62C7CF18327F9B16A /* Pods-WellHubUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WellHubUITests.release.xcconfig"; path = "Target Support Files/Pods-WellHubUITests/Pods-WellHubUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2215803A2A1B19940017933D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE594B589DC8AA5347A78DA8 /* Pods_WellHub.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		221580502A1B19950017933D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BF0CE1BE09984CDBAE7CE3B /* Pods_WellHubTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2215805A2A1B19950017933D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F861E3EC4FB1D877B7674E04 /* Pods_WellHubUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2206EA6E2A1B8F02000A3ADF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2206EA722A1B907A000A3ADF /* Repository */,
+				2206EA732A1B9086000A3ADF /* Setup */,
+				2206EA742A1B9098000A3ADF /* Worker.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		2206EA6F2A1B8F0B000A3ADF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2206EA7E2A1B91C9000A3ADF /* Coordinator */,
+				2206EA852A1B92C1000A3ADF /* Extensions */,
+				2206EA8A2A1B933B000A3ADF /* Model */,
+				2206EA8D2A1B9377000A3ADF /* Strings */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2206EA702A1B8F14000A3ADF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				221580492A1B19950017933D /* Assets.xcassets */,
+				2215804E2A1B19950017933D /* Info.plist */,
+				2206EA9E2A1B95E6000A3ADF /* LaunchScreen.storyboard */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		2206EA712A1B8FE2000A3ADF /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2206EA722A1B907A000A3ADF /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				2206EA762A1B90CD000A3ADF /* Repository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		2206EA732A1B9086000A3ADF /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				2206EA782A1B90E5000A3ADF /* APIHost.swift */,
+				2206EA7A2A1B90F1000A3ADF /* APIProvider.swift */,
+				2206EA7C2A1B90FC000A3ADF /* APITarget.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		2206EA7E2A1B91C9000A3ADF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2206EA832A1B9200000A3ADF /* Coordinator.swift */,
+				2206EA7F2A1B91D6000A3ADF /* Coordinator.App.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		2206EA852A1B92C1000A3ADF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2206EA862A1B92E2000A3ADF /* MoyaResponse+Map.swift */,
+				2206EA882A1B9324000A3ADF /* UIImageView+URL.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2206EA8A2A1B933B000A3ADF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2206EA8B2A1B9352000A3ADF /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2206EA8D2A1B9377000A3ADF /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				2206EA9C2A1B951F000A3ADF /* Default.strings */,
+				2206EA902A1B949E000A3ADF /* String+Localizable.swift */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		221580342A1B19940017933D = {
+			isa = PBXGroup;
+			children = (
+				2215803F2A1B19940017933D /* WellHub */,
+				221580562A1B19950017933D /* WellHubTests */,
+				221580602A1B19950017933D /* WellHubUITests */,
+				2215803E2A1B19940017933D /* Products */,
+				83DA2F68902940D4FAE7AA28 /* Pods */,
+				5290A67F1B82CE4C9594BB1D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2215803E2A1B19940017933D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2215803D2A1B19940017933D /* WellHub.app */,
+				221580532A1B19950017933D /* WellHubTests.xctest */,
+				2215805D2A1B19950017933D /* WellHubUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2215803F2A1B19940017933D /* WellHub */ = {
+			isa = PBXGroup;
+			children = (
+				2206EA6E2A1B8F02000A3ADF /* API */,
+				2206EA6F2A1B8F0B000A3ADF /* Core */,
+				2206EA712A1B8FE2000A3ADF /* Scenes */,
+				2206EA702A1B8F14000A3ADF /* Support Files */,
+				221580402A1B19940017933D /* AppDelegate.swift */,
+				221580422A1B19940017933D /* SceneDelegate.swift */,
+			);
+			path = WellHub;
+			sourceTree = "<group>";
+		};
+		221580562A1B19950017933D /* WellHubTests */ = {
+			isa = PBXGroup;
+			children = (
+				221580572A1B19950017933D /* WellHubTests.swift */,
+			);
+			path = WellHubTests;
+			sourceTree = "<group>";
+		};
+		221580602A1B19950017933D /* WellHubUITests */ = {
+			isa = PBXGroup;
+			children = (
+				221580612A1B19950017933D /* WellHubUITests.swift */,
+				221580632A1B19950017933D /* WellHubUITestsLaunchTests.swift */,
+			);
+			path = WellHubUITests;
+			sourceTree = "<group>";
+		};
+		5290A67F1B82CE4C9594BB1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A352E07AB9989D6D67F0845 /* Pods_WellHub.framework */,
+				1CB422FF150B648F2B4A64CF /* Pods_WellHubTests.framework */,
+				C435118A4862FC6682DFC9E2 /* Pods_WellHubUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83DA2F68902940D4FAE7AA28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38B4143CE0C89F37DB61E2CF /* Pods-WellHub.debug.xcconfig */,
+				59A5829881041EC6065C5F02 /* Pods-WellHub.release.xcconfig */,
+				0C6BB2B067D68B68F0C9C558 /* Pods-WellHubTests.debug.xcconfig */,
+				10046A402F6FEC8529A15670 /* Pods-WellHubTests.release.xcconfig */,
+				3427F9474D46E9EA3CBDE9F5 /* Pods-WellHubUITests.debug.xcconfig */,
+				F0787CA62C7CF18327F9B16A /* Pods-WellHubUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2215803C2A1B19940017933D /* WellHub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 221580672A1B19950017933D /* Build configuration list for PBXNativeTarget "WellHub" */;
+			buildPhases = (
+				3CB15CFA2B63F954BD7FC805 /* [CP] Check Pods Manifest.lock */,
+				221580392A1B19940017933D /* Sources */,
+				2215803A2A1B19940017933D /* Frameworks */,
+				2215803B2A1B19940017933D /* Resources */,
+				09D3C50989FD53F801C60B54 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WellHub;
+			productName = WellHub;
+			productReference = 2215803D2A1B19940017933D /* WellHub.app */;
+			productType = "com.apple.product-type.application";
+		};
+		221580522A1B19950017933D /* WellHubTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2215806A2A1B19950017933D /* Build configuration list for PBXNativeTarget "WellHubTests" */;
+			buildPhases = (
+				A0A0E7A7102002C12244BDF9 /* [CP] Check Pods Manifest.lock */,
+				2215804F2A1B19950017933D /* Sources */,
+				221580502A1B19950017933D /* Frameworks */,
+				221580512A1B19950017933D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				221580552A1B19950017933D /* PBXTargetDependency */,
+			);
+			name = WellHubTests;
+			productName = WellHubTests;
+			productReference = 221580532A1B19950017933D /* WellHubTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2215805C2A1B19950017933D /* WellHubUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2215806D2A1B19950017933D /* Build configuration list for PBXNativeTarget "WellHubUITests" */;
+			buildPhases = (
+				19ED061A096DE7B2B6B70792 /* [CP] Check Pods Manifest.lock */,
+				221580592A1B19950017933D /* Sources */,
+				2215805A2A1B19950017933D /* Frameworks */,
+				2215805B2A1B19950017933D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2215805F2A1B19950017933D /* PBXTargetDependency */,
+			);
+			name = WellHubUITests;
+			productName = WellHubUITests;
+			productReference = 2215805D2A1B19950017933D /* WellHubUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		221580352A1B19940017933D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					2215803C2A1B19940017933D = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					221580522A1B19950017933D = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 2215803C2A1B19940017933D;
+					};
+					2215805C2A1B19950017933D = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 2215803C2A1B19940017933D;
+					};
+				};
+			};
+			buildConfigurationList = 221580382A1B19940017933D /* Build configuration list for PBXProject "WellHub" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"pt-BR",
+			);
+			mainGroup = 221580342A1B19940017933D;
+			productRefGroup = 2215803E2A1B19940017933D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2215803C2A1B19940017933D /* WellHub */,
+				221580522A1B19950017933D /* WellHubTests */,
+				2215805C2A1B19950017933D /* WellHubUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2215803B2A1B19940017933D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2206EA9F2A1B95E6000A3ADF /* LaunchScreen.storyboard in Resources */,
+				2206EA9A2A1B951F000A3ADF /* Default.strings in Resources */,
+				2215804A2A1B19950017933D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		221580512A1B19950017933D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2215805B2A1B19950017933D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09D3C50989FD53F801C60B54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WellHub/Pods-WellHub-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WellHub/Pods-WellHub-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WellHub/Pods-WellHub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19ED061A096DE7B2B6B70792 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WellHubUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CB15CFA2B63F954BD7FC805 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WellHub-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0A0E7A7102002C12244BDF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WellHubTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		221580392A1B19940017933D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221580412A1B19940017933D /* AppDelegate.swift in Sources */,
+				2206EA792A1B90E5000A3ADF /* APIHost.swift in Sources */,
+				2206EA752A1B9098000A3ADF /* Worker.swift in Sources */,
+				2206EA8C2A1B9352000A3ADF /* Model.swift in Sources */,
+				2206EA802A1B91D6000A3ADF /* Coordinator.App.swift in Sources */,
+				221580432A1B19940017933D /* SceneDelegate.swift in Sources */,
+				2206EA872A1B92E2000A3ADF /* MoyaResponse+Map.swift in Sources */,
+				2206EA772A1B90CD000A3ADF /* Repository.swift in Sources */,
+				2206EA7B2A1B90F1000A3ADF /* APIProvider.swift in Sources */,
+				2206EA7D2A1B90FC000A3ADF /* APITarget.swift in Sources */,
+				2206EA892A1B9324000A3ADF /* UIImageView+URL.swift in Sources */,
+				2206EA912A1B949E000A3ADF /* String+Localizable.swift in Sources */,
+				2206EA842A1B9200000A3ADF /* Coordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2215804F2A1B19950017933D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221580582A1B19950017933D /* WellHubTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		221580592A1B19950017933D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221580642A1B19950017933D /* WellHubUITestsLaunchTests.swift in Sources */,
+				221580622A1B19950017933D /* WellHubUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		221580552A1B19950017933D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2215803C2A1B19940017933D /* WellHub */;
+			targetProxy = 221580542A1B19950017933D /* PBXContainerItemProxy */;
+		};
+		2215805F2A1B19950017933D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2215803C2A1B19940017933D /* WellHub */;
+			targetProxy = 2215805E2A1B19950017933D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2206EA9C2A1B951F000A3ADF /* Default.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2206EA9B2A1B951F000A3ADF /* en */,
+				2206EA9D2A1B9522000A3ADF /* pt-BR */,
+			);
+			name = Default.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		221580652A1B19950017933D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		221580662A1B19950017933D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		221580682A1B19950017933D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38B4143CE0C89F37DB61E2CF /* Pods-WellHub.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9BC293Z6NF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WellHub/Support Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wnhirsch.WellHub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		221580692A1B19950017933D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59A5829881041EC6065C5F02 /* Pods-WellHub.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9BC293Z6NF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WellHub/Support Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wnhirsch.WellHub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		2215806B2A1B19950017933D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C6BB2B067D68B68F0C9C558 /* Pods-WellHubTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9BC293Z6NF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wnhirsch.WellHubTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WellHub.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WellHub";
+			};
+			name = Debug;
+		};
+		2215806C2A1B19950017933D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10046A402F6FEC8529A15670 /* Pods-WellHubTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9BC293Z6NF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wnhirsch.WellHubTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WellHub.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WellHub";
+			};
+			name = Release;
+		};
+		2215806E2A1B19950017933D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3427F9474D46E9EA3CBDE9F5 /* Pods-WellHubUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9BC293Z6NF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wnhirsch.WellHubUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = WellHub;
+			};
+			name = Debug;
+		};
+		2215806F2A1B19950017933D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0787CA62C7CF18327F9B16A /* Pods-WellHubUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9BC293Z6NF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wnhirsch.WellHubUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = WellHub;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		221580382A1B19940017933D /* Build configuration list for PBXProject "WellHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				221580652A1B19950017933D /* Debug */,
+				221580662A1B19950017933D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		221580672A1B19950017933D /* Build configuration list for PBXNativeTarget "WellHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				221580682A1B19950017933D /* Debug */,
+				221580692A1B19950017933D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2215806A2A1B19950017933D /* Build configuration list for PBXNativeTarget "WellHubTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2215806B2A1B19950017933D /* Debug */,
+				2215806C2A1B19950017933D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2215806D2A1B19950017933D /* Build configuration list for PBXNativeTarget "WellHubUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2215806E2A1B19950017933D /* Debug */,
+				2215806F2A1B19950017933D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 221580352A1B19940017933D /* Project object */;
+}
