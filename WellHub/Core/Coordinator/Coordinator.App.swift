@@ -19,8 +19,10 @@ extension Coordinator {
         }
 
         func start() {
-            // TODO: Implement main view redirection
-            window.rootViewController = UIViewController()
+            let userCoordinator = Coordinator.User()
+            userCoordinator.start()
+            childCoordinator = userCoordinator
+            window.rootViewController = userCoordinator.containerViewController
             window.makeKeyAndVisible()
         }
 
