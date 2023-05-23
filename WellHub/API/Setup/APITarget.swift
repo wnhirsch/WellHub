@@ -57,6 +57,10 @@ extension APITarget {
     }
 
     func sessionHeader() -> [String: String]? {
-        return nil
+        return [
+            "Accept": "application/vnd.github+json",
+            "X-GitHub-Api-Version": "2022-11-28",
+            "Authorization": "Bearer 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"
+        ]
     }
 }

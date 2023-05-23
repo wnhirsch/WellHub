@@ -10,6 +10,6 @@ import Foundation
 enum APIHost {
     
     static var baseURL: URL {
-        return URL(string: "https://api.github.com/")!
+        return URL(string: "https://api.github.com")!
     }
 }
