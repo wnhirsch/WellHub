@@ -21,15 +21,12 @@ extension Loadable where Self: UIViewController {
     private func addLoadingView(subview: UIView? = nil) -> Scene.Components.LoadingView {
         let loadingView = Scene.Components.LoadingView()
         loadingView.startAnimating()
-        loadingView.alpha = 0
-
-        view.addSubview(loadingView)
         
-        if let view = subview ?? view {
-            loadingView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-            loadingView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-            loadingView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-            loadingView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        if let superview = subview ?? view {
+            superview.addSubview(loadingView)
+            loadingView.snp.makeConstraints{ (make) -> Void in
+                make.center.equalToSuperview()
+            }
         }
 
         return loadingView

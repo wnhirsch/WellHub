@@ -12,6 +12,8 @@ target 'WellHub' do
   pod 'Moya'
   pod 'Kingfisher'
   pod 'SnapKit'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 
   target 'WellHubTests' do
     inherit! :search_paths

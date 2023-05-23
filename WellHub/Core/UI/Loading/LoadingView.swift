@@ -14,7 +14,7 @@ extension Scene.Components {
         
         private let activityIndicator: UIActivityIndicatorView = {
             let activityIndicator = UIActivityIndicatorView(style: .large)
-            activityIndicator.color = .white
+            activityIndicator.color = .label
             activityIndicator.hidesWhenStopped = false
             return activityIndicator
         }()
@@ -22,7 +22,7 @@ extension Scene.Components {
         private let messageLabel: UILabel = {
             let label = UILabel()
             label.text = nil
-            label.textColor = .white
+            label.textColor = .label
             label.numberOfLines = 0
             label.textAlignment = .center
             label.font = UIFont.systemFont(ofSize: 16)
@@ -56,7 +56,7 @@ extension Scene.Components {
         }
         
         func setupAdditionalConfiguration() {
-            backgroundColor = .black
+            backgroundColor = .clear
         }
         
         func setup(message: String?) {

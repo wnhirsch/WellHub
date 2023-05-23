@@ -5,7 +5,8 @@
 //  Created by Wellington Nascente Hirsch on 22/05/23.
 //
 
-import Foundation
+import RxSwift
+import RxRelay
 
 extension Scene.User.List {
     
@@ -13,8 +14,10 @@ extension Scene.User.List {
         
         private let coordinator: Coordinator.User
         private let worker: Worker.User
-        var users: [Model.User] = []
-        var lastId: Int = 0
+        
+        private var lastId: Int = 0
+        let users = BehaviorRelay<[Model.User]>(value: [])
+        let isLoading = BehaviorRelay<Bool>(value: false)
 
         init(coordinator: Coordinator.User, worker: Worker.User = .init()) {
             self.coordinator = coordinator
@@ -22,15 +25,22 @@ extension Scene.User.List {
         }
         
         func fetchUsers() {
-            // TODO: start loading
+            isLoading.accept(true)
             
             worker.getUsersByPage(lastId: lastId, success: { [weak self] users in
                 guard let self = self else { return }
-                self.users = users
-                // TODO: alert success
+                if let lastId = users.last?.id {
+                    self.lastId = lastId
+                }
+                self.users.accept(self.users.value + users)
+                self.isLoading.accept(false)
             }, failure: { [weak self] in
                 guard let self = self else { return }
-                // TODO: alert error
+                self.isLoading.accept(false)
+                self.coordinator.showError { [weak self] _ in
+                    guard let self = self else { return }
+                    self.fetchUsers()
+                }
             })
         }
     }

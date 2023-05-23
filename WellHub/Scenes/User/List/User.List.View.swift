@@ -12,7 +12,11 @@ extension Scene.User.List {
     
     class View: UIView, CodeView {
         
-        let tableView = UITableView()
+        let tableView: UITableView = {
+            let tableView = UITableView()
+            tableView.register(Cell.self)
+            return tableView
+        }()
         
         init() {
             super.init(frame: .zero)

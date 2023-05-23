@@ -40,6 +40,8 @@
 		221580582A1B19950017933D /* WellHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221580572A1B19950017933D /* WellHubTests.swift */; };
 		221580622A1B19950017933D /* WellHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221580612A1B19950017933D /* WellHubUITests.swift */; };
 		221580642A1B19950017933D /* WellHubUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221580632A1B19950017933D /* WellHubUITestsLaunchTests.swift */; };
+		22F7AA122A1C131300DD1EC7 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F7AA112A1C131300DD1EC7 /* UITableView+Reusable.swift */; };
+		22F7AA152A1C381800DD1EC7 /* User.List.View.Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F7AA142A1C381800DD1EC7 /* User.List.View.Cell.swift */; };
 		CE594B589DC8AA5347A78DA8 /* Pods_WellHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A352E07AB9989D6D67F0845 /* Pods_WellHub.framework */; };
 		F861E3EC4FB1D877B7674E04 /* Pods_WellHubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C435118A4862FC6682DFC9E2 /* Pods_WellHubUITests.framework */; };
 /* End PBXBuildFile section */
@@ -102,6 +104,8 @@
 		2215805D2A1B19950017933D /* WellHubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WellHubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		221580612A1B19950017933D /* WellHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellHubUITests.swift; sourceTree = "<group>"; };
 		221580632A1B19950017933D /* WellHubUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellHubUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		22F7AA112A1C131300DD1EC7 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		22F7AA142A1C381800DD1EC7 /* User.List.View.Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.List.View.Cell.swift; sourceTree = "<group>"; };
 		3427F9474D46E9EA3CBDE9F5 /* Pods-WellHubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WellHubUITests.debug.xcconfig"; path = "Target Support Files/Pods-WellHubUITests/Pods-WellHubUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		38B4143CE0C89F37DB61E2CF /* Pods-WellHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WellHub.debug.xcconfig"; path = "Target Support Files/Pods-WellHub/Pods-WellHub.debug.xcconfig"; sourceTree = "<group>"; };
 		59A5829881041EC6065C5F02 /* Pods-WellHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WellHub.release.xcconfig"; path = "Target Support Files/Pods-WellHub/Pods-WellHub.release.xcconfig"; sourceTree = "<group>"; };
@@ -211,6 +215,7 @@
 			children = (
 				2206EA862A1B92E2000A3ADF /* MoyaResponse+Map.swift */,
 				2206EA882A1B9324000A3ADF /* UIImageView+URL.swift */,
+				22F7AA112A1C131300DD1EC7 /* UITableView+Reusable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 				2206EAB12A1C0393000A3ADF /* User.List.View.swift */,
 				2206EAB32A1C03A2000A3ADF /* User.List.ViewController.swift */,
 				2206EAB52A1C03BC000A3ADF /* User.List.ViewModel.swift */,
+				22F7AA132A1C380A00DD1EC7 /* Components */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -332,6 +338,14 @@
 				221580632A1B19950017933D /* WellHubUITestsLaunchTests.swift */,
 			);
 			path = WellHubUITests;
+			sourceTree = "<group>";
+		};
+		22F7AA132A1C380A00DD1EC7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				22F7AA142A1C381800DD1EC7 /* User.List.View.Cell.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		5290A67F1B82CE4C9594BB1D /* Frameworks */ = {
@@ -591,6 +605,7 @@
 				2206EAA52A1B9F35000A3ADF /* Scene.swift in Sources */,
 				2206EAB62A1C03BC000A3ADF /* User.List.ViewModel.swift in Sources */,
 				2206EAAE2A1BA03B000A3ADF /* Model.User.swift in Sources */,
+				22F7AA122A1C131300DD1EC7 /* UITableView+Reusable.swift in Sources */,
 				2206EA802A1B91D6000A3ADF /* Coordinator.App.swift in Sources */,
 				221580432A1B19940017933D /* SceneDelegate.swift in Sources */,
 				2206EA872A1B92E2000A3ADF /* MoyaResponse+Map.swift in Sources */,
@@ -601,6 +616,7 @@
 				2206EA7D2A1B90FC000A3ADF /* APITarget.swift in Sources */,
 				2206EAB02A1BA084000A3ADF /* Repository.User.swift in Sources */,
 				2206EA892A1B9324000A3ADF /* UIImageView+URL.swift in Sources */,
+				22F7AA152A1C381800DD1EC7 /* User.List.View.Cell.swift in Sources */,
 				2206EAA72A1B9F59000A3ADF /* Scene.User.swift in Sources */,
 				2206EA912A1B949E000A3ADF /* String+Localizable.swift in Sources */,
 				2206EA842A1B9200000A3ADF /* Coordinator.swift in Sources */,
