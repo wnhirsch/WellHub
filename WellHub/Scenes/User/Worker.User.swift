@@ -32,5 +32,41 @@ extension Worker {
                 }
             }
         }
+        
+        func getUser(login: String, success: ((Model.UserDetail) -> Void)? = nil, failure: (() -> Void)? = nil) {
+            api.getUser(login: login) { result in
+                switch result {
+                case let .success(response):
+                    do {
+                        let user = try response.mapObject(Model.UserDetail.self)
+                        success?(user)
+                    } catch let error {
+                        print(error)
+                        failure?()
+                    }
+                case let .failure(error):
+                    print(error)
+                    failure?()
+                }
+            }
+        }
+        
+        func getUserReposByPage(login: String, page: Int = 1, success: (([Model.Repository]) -> Void)? = nil, failure: (() -> Void)? = nil) {
+            api.getUserReposByPage(login: login, page: page) { result in
+                switch result {
+                case let .success(response):
+                    do {
+                        let repositories = try response.mapObject([Model.Repository].self)
+                        success?(repositories)
+                    } catch let error {
+                        print(error)
+                        failure?()
+                    }
+                case let .failure(error):
+                    print(error)
+                    failure?()
+                }
+            }
+        }
     }
 }

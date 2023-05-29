@@ -1,15 +1,15 @@
 //
-//  User.List.ViewController.swift
+//  User.Detail.ViewController.swift
 //  WellHub
 //
-//  Created by Wellington Nascente Hirsch on 22/05/23.
+//  Created by Wellington Nascente Hirsch on 23/05/23.
 //
 
 import RxCocoa
 import RxSwift
 import UIKit
 
-extension Scene.User.List {
+extension Scene.User.Detail {
 
     class ViewController: UIViewController, Loadable {
 
@@ -33,7 +33,7 @@ extension Scene.User.List {
         
         override func viewDidLoad() {
             super.viewDidLoad()
-            navigationItem.title = "users".localized(context: .userDetail)
+            navigationItem.backBarButtonItem = .init()
             bind()
         }
         
@@ -43,28 +43,23 @@ extension Scene.User.List {
         }
         
         private func bind() {
-            // Bind users from API with the table and show them
-            viewModel.users.bind(
+            // Bind user detail from API with the view and update it
+            viewModel.userDetail.bind { [weak self] model in
+                guard let self = self else { return }
+                self.mainView.setup(model: model)
+            }.disposed(by: bag)
+            
+            // Bind repositories from API with the view and update it
+            viewModel.repos.bind(
                 to: mainView.tableView.rx.items(cellIdentifier: Cell.identifier, cellType: Cell.self)
             ) { _, model, cell in
-                cell.setup(login: model.login, avatarUrl: model.avatarUrl)
+                cell.setup(model: model)
             }.disposed(by: bag)
             
             // Bind the loading flag with UI feedback
             viewModel.isLoading.bind { [weak self] isLoading in
                 guard let self = self else { return }
                 isLoading ? self.showLoading() : self.hideLoading()
-            }.disposed(by: bag)
-            
-            // Bind user click with action
-            mainView.tableView.rx.modelSelected(Model.User.self).bind { [weak self] user in
-                guard let self = self else { return }
-                self.viewModel.goToUserDetail(login: user.login)
-            }.disposed(by: bag)
-            
-            mainView.tableView.rx.itemSelected.bind { [weak self] indexPath in
-                guard let self = self else { return }
-                self.mainView.tableView.deselectRow(at: indexPath, animated: true)
             }.disposed(by: bag)
             
             // Subscribe an observable for the Table's content offset
@@ -78,12 +73,12 @@ extension Scene.User.List {
                 let contentSize = self.mainView.tableView.contentSize.height
                 let tableSize = self.mainView.tableView.frame.height
                 if contentOffset > (contentSize - tableSize) {
-                    self.viewModel.fetchUsers()
+                    self.viewModel.fetchUserRepos()
                 }
             }.disposed(by: bag)
             
             // After bind everything, fetch the data
-            viewModel.fetchUsers()
+            viewModel.fetchUserDetail()
         }
     }
 }

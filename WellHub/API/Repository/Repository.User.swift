@@ -13,24 +13,30 @@ extension Repository {
 
         enum Target: APITarget {
             case getUsersByPage(lastId: Int)
+            case getUser(login: String)
+            case getUserReposByPage(login: String, page: Int)
 
             var path: String {
                 switch self {
                 case .getUsersByPage(let lastId):
-                    return "/users?per_page=30&since=\(lastId)"
+                    return "/users?per_page=\(APIHost.itemsPerPage)&since=\(lastId)"
+                case .getUser(let login):
+                    return "/users/\(login)"
+                case .getUserReposByPage(let login, let page):
+                    return "/users/\(login)/repos?per_page=\(APIHost.itemsPerPage)&page=\(page)"
                 }
             }
 
             var method: Method {
                 switch self {
-                case .getUsersByPage:
+                case .getUsersByPage, .getUser, .getUserReposByPage:
                     return .get
                 }
             }
 
             var task: Task {
                 switch self {
-                case .getUsersByPage:
+                case .getUsersByPage, .getUser, .getUserReposByPage:
                     return .requestPlain
                 }
             }
@@ -46,8 +52,16 @@ extension Repository {
 }
 
 extension Repository.User {
-
+    
     func getUsersByPage(lastId: Int, completion: @escaping Completion) {
         provider.request(.getUsersByPage(lastId: lastId), completion: completion)
+    }
+    
+    func getUser(login: String, completion: @escaping Completion) {
+        provider.request(.getUser(login: login), completion: completion)
+    }
+    
+    func getUserReposByPage(login: String, page: Int, completion: @escaping Completion) {
+        provider.request(.getUserReposByPage(login: login, page: page), completion: completion)
     }
 }

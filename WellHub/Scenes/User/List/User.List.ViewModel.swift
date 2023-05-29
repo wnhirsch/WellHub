@@ -24,6 +24,11 @@ extension Scene.User.List {
             self.worker = worker
         }
         
+        func goToUserDetail(login: String?) {
+            guard let login = login else { return }
+            coordinator.showUserDetail(login: login)
+        }
+        
         func fetchUsers() {
             isLoading.accept(true)
             

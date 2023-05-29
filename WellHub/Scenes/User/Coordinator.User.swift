@@ -22,7 +22,14 @@ extension Coordinator {
         
         func start() {
             let vc = Scene.User.List.ViewController(viewModel: .init(coordinator: self))
-            navigationController.pushViewController(vc, animated: false)
+            navigationController.pushViewController(vc, animated: true)
+        }
+        
+        func showUserDetail(login: String) {
+            let vc = Scene.User.Detail.ViewController(
+                viewModel: .init(login: login, coordinator: self)
+            )
+            navigationController.pushViewController(vc, animated: true)
         }
         
         func showError(handler: ((UIAlertAction) -> Void)? = nil) {

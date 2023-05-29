@@ -9,6 +9,7 @@ import Foundation
 
 enum LocalizableFiles: String {
     case `default` = "Default"
+    case userDetail = "User.Detail"
 }
 
 extension String {
