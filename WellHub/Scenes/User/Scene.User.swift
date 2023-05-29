@@ -9,5 +9,6 @@ extension Scene {
     
     enum User {
         enum List { }
+        enum Detail { }
     }
 }

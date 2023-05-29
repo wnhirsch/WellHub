@@ -12,4 +12,8 @@ enum APIHost {
     static var baseURL: URL {
         return URL(string: "https://api.github.com")!
     }
+    
+    static var itemsPerPage: Int {
+        return 30
+    }
 }

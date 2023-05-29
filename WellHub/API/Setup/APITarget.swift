@@ -60,7 +60,7 @@ extension APITarget {
         return [
             "Accept": "application/vnd.github+json",
             "X-GitHub-Api-Version": "2022-11-28",
-            "Authorization": "Bearer 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"
+            "Authorization": "Bearer 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"
         ]
     }
 }
