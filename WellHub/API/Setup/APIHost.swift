@@ -10,10 +10,15 @@ import Foundation
 enum APIHost {
     
     static var baseURL: URL {
-        return URL(string: "https://api.github.com")!
+        URL(string: "https://api.github.com")!
     }
     
     static var itemsPerPage: Int {
-        return 30
+        30
+    }
+    
+    // Change it to use the API with a bigger request limit
+    static var accessToken: String {
+        "YOUR_ACCESS_TOKEN"
     }
 }

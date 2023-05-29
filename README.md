@@ -19,6 +19,8 @@ O WellHub é um Visualizador de Usuários do Github para dispositivos iOS desenv
 3. Navegue até o diretório raiz do projeto no terminal.
 4. Execute o comando `pod install` para instalar as dependências.
 
+Claro! Vamos adicionar essa instrução no arquivo Readme.md. Aqui está o trecho atualizado:
+
 ## Uso
 
 1. Abra o arquivo `.xcworkspace` do projeto no Xcode.
@@ -28,6 +30,22 @@ O WellHub é um Visualizador de Usuários do Github para dispositivos iOS desenv
 5. Na tela de detalhes, você encontrará informações como o número de seguidores, empresa em que trabalha, blog e localização.
 6. Também serão apresentados os repositórios públicos do usuário.
 
+**Importante**: Para evitar ser barrado pela API do Github devido a limites de taxa, é recomendado substituir o token de login padrão da API por um token pessoal. Para isso, siga as instruções abaixo:
+
+1. Abra o arquivo `APIHost.swift` do projeto.
+2. Procure pela linha de código que contém o token de login: 
+
+```swift
+static var accessToken: String {
+    "YOUR_ACCESS_TOKEN"
+}
+```
+
+3. Substitua `"YOUR_ACCESS_TOKEN"` pelo seu token pessoal de login da API do Github.
+4. Salve as alterações no arquivo.
+
+Certifique-se de obter um token pessoal válido da API do Github para garantir o acesso adequado às requisições. Maiores detalhes podem ser encontrados [nesse tutorial](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic).
+
 ## Contato
 
-Se você tiver dúvidas, sugestões ou quiser entrar em contato, pode me encontrar no Github @wnhirsch ou através do meu e-mail wnhirsch@inf.ufrgs.br.
+Se você tiver dúvidas, sugestões ou quiser entrar em contato, pode me encontrar no Github [@wnhirsch](https://github.com/wnhirsch) ou através do meu e-mail wnhirsch@inf.ufrgs.br.

@@ -57,10 +57,15 @@ extension APITarget {
     }
 
     func sessionHeader() -> [String: String]? {
-        return [
+        var header = [
             "Accept": "application/vnd.github+json",
-            "X-GitHub-Api-Version": "2022-11-28",
-            "Authorization": "Bearer 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"
+            "X-GitHub-Api-Version": "2022-11-28"
         ]
+        
+        if APIHost.accessToken != "YOUR_ACCESS_TOKEN" {
+            header["Authorization"] = "Bearer \(APIHost.accessToken)"
+        }
+        
+        return header
     }
 }
